@@ -13,16 +13,16 @@ jobs:
         include:
           - dockerfile: ./Dockerfile
             context: client
-            image: ${{ secrets.DOCKER_HUB_USERNAME }}/lab11:fib-client
+            image: 01234ab909f/lab11:fib-client
           - dockerfile: ./Dockerfile
             context: server
-            image: ${{ secrets.DOCKER_HUB_USERNAME }}/lab11:fib-server
+            image: 01234ab909f/lab11:fib-server
           - dockerfile: ./Dockerfile
             context: worker
-            image: ${{ secrets.DOCKER_HUB_USERNAME }}/lab11:fib-worker
+            image: 01234ab909f/lab11:fib-worker
           - dockerfile: ./Dockerfile
             context: nginx
-            image: ${{ secrets.DOCKER_HUB_USERNAME }}/lab11:fib-router
+            image: 01234ab909f/lab11:fib-router
 
     steps:
 
